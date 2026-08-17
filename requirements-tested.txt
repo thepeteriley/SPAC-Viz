@@ -1,5 +1,5 @@
 # Exact versions used for the documented test/smoke run (Python 3.12.13).
-astropy==7.2.2
+astropy==8.0.1
 certifi==2026.7.22
 h5py==3.16.0
 numpy==2.4.6
