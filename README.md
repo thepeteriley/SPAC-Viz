@@ -57,7 +57,7 @@ python -m pip install -e . --no-deps
 ```
 
 The exact versions used for the latest verified environment are recorded in
-[`requirements-tested.txt`](requirements-tested.txt).
+[`tested-environment.txt`](tested-environment.txt).
 
 ## Quick start
 
