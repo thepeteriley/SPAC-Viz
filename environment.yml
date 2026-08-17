@@ -1,0 +1,15 @@
+name: spac-viz
+channels: [conda-forge]
+dependencies:
+  - python=3.12
+  - astropy>=7,<8
+  - certifi>=2025
+  - h5py>=3.12,<4
+  - numpy>=2,<3
+  - pooch>=1.8,<2
+  - pyvista>=0.46,<0.48
+  - scipy>=1.15,<2
+  - sunkit-magex>=1.1,<2
+  - sunpy>=7,<9
+  - pytest>=8,<10
+  - pip

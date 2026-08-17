@@ -1,0 +1,45 @@
+# Python environments, caches, and build products
+.venv/
+.uv-cache/
+.uv-python/
+*.egg-info/
+build/
+dist/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local application and plotting caches
+.astropy-cache/
+.sunpy-config/
+.sunpy-data/
+.mpl-config/
+.cache/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Scientific inputs and generated products (often hundreds of MB)
+*.fits
+*.fits.gz
+*.fts
+*.fts.gz
+*.npz
+*.vtp
+*.vla
+checkpoints/
+downloads/
+output*/
+pfss_output/
+smoke_output/
+full_1deg/
+visualization_run/
+download_latest_smoke/
+
+# Machine-specific development handoff
+HANDOFF.md

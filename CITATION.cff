@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use SPAC-Viz in your research, please cite this software."
+title: "SPAC-Viz: Solar PFSS Analysis and Classification visualization toolkit"
+type: software
+authors:
+  - family-names: Riley
+    given-names: Peter
+repository-code: "https://github.com/thepeteriley/SPAC-Viz"
+url: "https://github.com/thepeteriley/SPAC-Viz"
+version: 1.0.0
+date-released: 2026-08-17
+license: MIT
+keywords:
+  - solar physics
+  - PFSS
+  - ADAPT
+  - magnetic field
+  - Digistar

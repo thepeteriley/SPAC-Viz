@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spac-viz"
+version = "1.0.0"
+description = "Solar PFSS Analysis and Classification visualization toolkit"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = "MIT"
+authors = [{name = "Peter Riley"}]
+keywords = ["solar-physics", "PFSS", "ADAPT", "magnetic-field", "Digistar", "VLA"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Astronomy",
+  "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+  "astropy>=7.0,<8",
+  "certifi>=2025.0",
+  "h5py>=3.12,<4",
+  "numpy>=2.0,<3",
+  "pooch>=1.8,<2",
+  "pyvista>=0.46,<0.48",
+  "scipy>=1.15,<2",
+  "sunkit-magex[all]>=1.1,<2",
+  "sunpy[map,net]>=7.0,<9",
+]
+
+[project.urls]
+Homepage = "https://github.com/thepeteriley/SPAC-Viz"
+Documentation = "https://github.com/thepeteriley/SPAC-Viz#readme"
+Issues = "https://github.com/thepeteriley/SPAC-Viz/issues"
+Source = "https://github.com/thepeteriley/SPAC-Viz"
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+spac-viz = "spac_viz.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["spac_viz*"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+markers = ["network: requires network access", "integration: runs a PFSS solution"]
+testpaths = ["tests"]

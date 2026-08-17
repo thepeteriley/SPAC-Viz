@@ -1,0 +1,13 @@
+# Exact versions used for the documented test/smoke run (Python 3.12.13).
+astropy==7.2.2
+certifi==2026.7.22
+h5py==3.16.0
+numpy==2.4.6
+pooch==1.9.0
+pyvista==0.47.3
+scipy==1.18.0
+streamtracer==2.6.0
+sunkit-magex==1.1.0
+sunpy==8.0.0
+pytest==9.1.1
+vtk==9.6.2
