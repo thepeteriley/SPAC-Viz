@@ -10,14 +10,13 @@
 
 SPAC-Viz turns ADAPT photospheric magnetic maps into reproducible potential-field
 source-surface (PFSS) solutions, classified three-dimensional field lines,
-PyVista visualizations, and strict Digistar VLA geometry. It is designed for
-large scientific runs: tracing is chunked, checkpointed, resumable, and never
-silently subsampled.
+PyVista visualisations, and strict Digistar VLA geometry. It is designed for
+large scientific runs: tracing is chunked, checkpointed, and resumable.
 
 ## Highlights
 
-- Loads a specific ADAPT ensemble realization or the pixelwise ensemble mean.
-- Downloads the latest or time-nearest Carrington-centered ADAPT product.
+- Loads a specific ADAPT ensemble realisation or the pixelwise ensemble mean.
+- Downloads the latest or time-nearest Carrington-centred ADAPT product.
 - Converts native ADAPT CAR maps to the CEA grid required by maintained
   `sunkit_magex.pfss`.
 - Traces every seed bidirectionally with maintained sunkit-magex tracers.
@@ -72,7 +71,7 @@ spac-viz \
   --output-dir output_2deg
 ```
 
-Or fetch the newest available Carrington-centered ADAPT map:
+Or fetch the newest available Carrington-centred ADAPT map:
 
 ```bash
 spac-viz --download-latest --realization 0 --plot --output-dir output_latest
@@ -91,7 +90,7 @@ scientifically desired.
 
 ## Common workflows
 
-### Save a visualization and Digistar files
+### Save a visualisation and Digistar files
 
 ```bash
 spac-viz \
@@ -138,9 +137,9 @@ Two 1° grids contain 129,600 seeds and can require substantial CPU time, RAM,
 and disk space. SPAC-Viz does not subsample them.
 
 Run `spac-viz --help` for every option. See the [CLI guide](docs/CLI.md) for
-input selection, visualization controls, checkpoint behavior, and output files.
+input selection, visualisation controls, checkpoint behaviour, and output files.
 
-## Visualization and classification
+## Visualisation and classification
 
 ![Example 2-degree SPAC-Viz output](docs/images/example-2deg.png)
 
@@ -173,7 +172,7 @@ are protected unless `--overwrite` is explicitly supplied.
 
 Scientific coordinates remain right-handed `(X, Y, Z)`. VLA export writes
 input-axis order `(X, Z, Y)` together with `set coordsys LEFT`. Classic VLA
-does not encode RGB, so colors are class labels in filenames and must be
+does not encode RGB, so colours are class labels in filenames and must be
 assigned to the three objects in Digistar. No intensity directive or intensity
 records are emitted.
 
@@ -182,7 +181,7 @@ records are emitted.
 PFSS assumes a static, current-free corona between the photosphere and a
 spherical radial-field source surface. It cannot represent currents,
 eruptions, time evolution, or a non-spherical source surface. Results depend on
-the selected magnetogram, ADAPT realization, seed grid, PFSS resolution, and
+the selected magnetogram, ADAPT realisation, seed grid, PFSS resolution, and
 source-surface radius. See [Scientific notes](docs/SCIENTIFIC_NOTES.md).
 
 ## Development
@@ -207,9 +206,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and the
 
 ## ADAPT acknowledgement
 
-> This work utilizes data produced collaboratively between Air Force Research
+> This work utilises data produced collaboratively between Air Force Research
 > Laboratory (AFRL) & the National Solar Observatory (NSO). The ADAPT model
-> development is supported by AFRL. The input data utilized by ADAPT is obtained
+> development is supported by AFRL. The input data utilised by ADAPT is obtained
 > by NSO/NISP (NSO Integrated Synoptic Program). NSO is operated by the
 > Association of Universities for Research in Astronomy (AURA), Inc., under a
 > cooperative agreement with the National Science Foundation (NSF).
